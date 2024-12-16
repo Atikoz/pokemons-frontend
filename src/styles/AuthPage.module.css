@@ -1,0 +1,28 @@
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginButton {
+  height: 50px;
+  width: 200px;
+  background-color: #6d9cf4;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+  background-color: #80acfd;
+}
+
+.loginButton:active {
+  background-color: #578ff5;
+}
