@@ -9,11 +9,10 @@ import errorNotify from '../notify/errorNotify.js';
 import doneNotify from '../notify/doneNotify.js';
 import { Bounce, ToastContainer } from 'react-toastify';
 import { useAccessToken } from '../hooks/useAccessToken.js';
-
-const webSocketUrl = 'http://192.168.8.2:5000';
+import { DOMAIN_API } from '../config.js';
 
 function BattlePage() {
-  const [ws, isConnected, error] = useWebSocket(webSocketUrl);
+  const [ws, isConnected, error] = useWebSocket(DOMAIN_API);
   const [battleState, setBattleState] = useState(null);
   const [computerHp, setComputerHp] = useState(0);
   const [playerHp, setPlayerHp] = useState(0);
