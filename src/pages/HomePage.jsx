@@ -54,7 +54,7 @@ const RegisterPage = () => {
     <div className={styles.container}>
       <Navbar />
       <div className={styles.title}>
-        <h1>Welcome to Pockemons!</h1>
+        <h1>Welcome to Pokemons!</h1>
         <p>Select your Pokemon and start the battle!</p>
       </div>
 

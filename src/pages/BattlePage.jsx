@@ -76,9 +76,9 @@ function BattlePage() {
             setPlayerHp(data.payload.playerHP);
 
             if (data.payload.winner === 'player') {
-              doneNotify('You win!', 3000);
+              doneNotify('You won!', 3000);
             } else {
-              errorNotify('You loss!', 3000)
+              errorNotify('You lose!', 3000)
             }
 
             const message = {
